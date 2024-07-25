@@ -13,4 +13,4 @@ tips:
 0. boi den 1 cum tu
 1. ctrl + d de quet khoi cac cum tu giong nhu vay tiep theo
 
-an shift + alt + f de config lai format
+an phim shift + alt + f de config lai format
