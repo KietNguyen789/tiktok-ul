@@ -1,0 +1,19 @@
+.inputinfo {
+    // background: #ffffff url(/rsrc.php/v3/yU/r/O7nelmd9XSI.png) repeat-x;
+    flex: 1;
+    //min-height: 22px;
+    border: 1px solid #dddfe2;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 1.7rem;
+    line-height: 16px;
+    padding: 0px 14px;
+    vertical-align: middle;
+    border-radius: 8px;
+    min-height: 30px;
+    //padding: 6px;
+    //max-height: 22px;
+}
+.inputinfo + .inputinfo {
+    margin-top: 10px;
+}
