@@ -15,14 +15,16 @@
     // dua vao goc toa do cua view
     position: relative;
     height: var(--search-height);
-    background-color: rgb(22 24 35 / 6%);
+
+    border: solid 1px rgb(22 24 35 / 6%);
+    background: buttonface;
     border-radius: var(--search-border-radius);
     // de nut la canh ben phai cua the search
     padding-left: 16px;
     margin: 0 8px;
     display: flex;
     // tranh bi co co:
-    border: 1.5px solid transparent;
+
     input {
         color: var(--black);
         font-size: 1.6rem;
@@ -83,6 +85,7 @@
     border-top-right-radius: var(--search-border-radius);
     border-bottom-right-radius: var(--search-border-radius);
     color: rgba(22, 24, 35, 0.34);
+    //color: var(--primary);
     font-size: 1.8rem;
     display: flex;
     // cho icon thut vo den khi = 16px,
@@ -94,6 +97,7 @@
     align-items: center;
     &:hover {
         background-color: rgba(22, 24, 35, 0.03);
+        opacity: 80%;
         cursor: pointer;
     }
     // neu de hover ben duoi active thi no khong hoat dong

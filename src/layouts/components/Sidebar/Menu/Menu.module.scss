@@ -1,23 +1,23 @@
+.wrapper {
+    border-bottom: 1px solid var(--gray);
+}
 .menu-item {
     // the navLink la the a la the inline
     display: flex;
     align-items: center;
 
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 650;
     // padding cong do dai hien co = 48, padding deu 4 huong
     padding: 8px;
     padding-left: 0;
     border-radius: 4px;
     color: var(--text-color);
     &.active {
-        color: var(--primary);
         .icon {
-            display: none;
-        }
-        .active-icon {
-            // do co the span
-            display: flex;
+            // display: none;
+            //         }
+            color: var(--primary);
         }
     }
     &:hover {
@@ -25,13 +25,13 @@
     }
     transition: background-color 200ms ease-in-out;
 }
-.icon,
-.active-icon {
+.icon {
+    //,.active-icon {
     display: flex;
 }
-.active-icon {
-    display: none;
-}
+// .active-icon {
+//     display: none;
+// }
 
 .title {
     font-family: var(--font-family-display); // TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;

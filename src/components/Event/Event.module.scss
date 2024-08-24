@@ -1,0 +1,67 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 16px;
+    cursor: pointer;
+    &:hover {
+        background-color: var(--hover-buttonface-color);
+        // opacity: 50%;
+    }
+    max-height: 250px;
+    width: 250px;
+    background-color: buttonface;
+    border-radius: 10px;
+    margin: 0 6px 20px var(--left-dis);
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    // giu duoc dung ty le
+    // tran ra vien tron
+    object-fit: cover;
+}
+
+.info {
+    //display: flex;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    width: 100%;
+}
+.title {
+    font-family: var(--font-family-display);
+    font-size: 3.2rem;
+}
+
+.end {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vouchers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.start {
+    display: flex;
+    justify-content: space-between;
+}
+
+// .name {
+//     // 16px = 1.6 rem
+//     font-size: 1.6rem;
+//     font-weight: 600;
+// }
+
+// .username {
+//     color: rgba(22, 24, 35, 0.5);
+//     font-size: 1.4rem;
+// }
+// .check {
+//     margin-left: 6px;
+//     color: rgb(32, 213, 236);
+// }

@@ -7,7 +7,7 @@
     width: 100%;
     // lay gia tri tu bien, khong thi lay mac dinh la 60
     height: 60px; // calc(--default-layout-header-height * --ratio);
-    box-shadow: 0px 1px 1px rgb(0 0 0 /12%);
+    box-shadow: 0px 1px 1px rgba(212, 190, 190, 0.12);
     display: flex;
     justify-content: center;
     // chi định vị trí fixed
@@ -15,7 +15,7 @@
     top: 0;
     left: 0;
     background-color: var(--white);
-    z-index: 10;
+    z-index: 30;
 }
 .inner {
     height: 100%;
@@ -27,6 +27,7 @@
     padding-left: 16px;
     align-items: center;
     justify-content: space-between;
+    background: var(--gray);
 }
 .logo-link {
     // do theo a va the div dang nam theo chieu doc
@@ -63,7 +64,7 @@
     background-color: transparent;
     font-size: 2.2rem;
     // bam mui ten len de lay ma he 16
-    color: rgb(22, 24, 35);
+    color: var(--white);
     padding: 4px 10px;
     cursor: pointer;
     display: flex;
@@ -95,8 +96,4 @@
     border-radius: 50%;
     margin-left: 12px;
     cursor: pointer;
-}
-.Upload-btn {
-    border-color: rgba(22, 24, 35, 0.12);
-    margin-right: 16px;
 }

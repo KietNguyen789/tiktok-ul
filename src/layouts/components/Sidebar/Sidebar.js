@@ -12,35 +12,46 @@ import {
 } from '~/components/Icons';
 import { useRef } from 'react';
 import SuggestedAccounts from '~/components/SuggestedAccounts';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faGamepad,
+    faHandHoldingDollar,
+    faPercentage,
+    faRightFromBracket,
+    faTag,
+    faTicket,
+    faUser,
+} from '@fortawesome/free-solid-svg-icons';
+import { useLocation } from 'react-router-dom';
 const cx = classNames.bind(styles);
 // neu menu trong sidebar dung chung trong layout thi dua ra component trong layout
 // dung chung cho src dua vao component cua src
 function Sidebar() {
     const Item = useRef();
+
     return (
         <aside className={styles.wrapper}>
             <Menu>
-                {/* <HomeIcon /> react.creatElement */}
                 <MenuItem
-                    title="For Your"
-                    to={config.routes.home}
-                    icon={<HomeIcon />}
-                    activeIcon={<HomeActiveIcon></HomeActiveIcon>}
+                    title="Budget Statistics"
+                    to={config.routes.budget}
+                    icon={<FontAwesomeIcon icon={faHandHoldingDollar} />}
+                    // activeIcon={}
                 ></MenuItem>
                 <MenuItem
-                    title="Following"
-                    to={config.routes.following}
-                    icon={<UserGroupIcon />}
-                    activeIcon={<UserGroupActiveIcon></UserGroupActiveIcon>}
-                ></MenuItem>
-                <MenuItem
-                    title="LIVE"
-                    to={config.routes.live}
-                    icon={<LiveIcon />}
-                    activeIcon={<LiveActiveIcon />}
+                    title="Promotion Status Statistics"
+                    to={config.routes.saleoffstate}
+                    icon={<FontAwesomeIcon icon={faTag} />}
+                    // activeIcon={<UserGroupActiveIcon></UserGroupActiveIcon>}
                 ></MenuItem>
             </Menu>
-            <SuggestedAccounts label="Suggested for you" />
+            <MenuItem
+                title="Home"
+                to={config.routes.home}
+                icon={<FontAwesomeIcon icon={faRightFromBracket} />}
+                //activeIcon={<LiveActiveIcon />}
+            ></MenuItem>
+            {/* <SuggestedAccounts label="Suggested for you" /> */}
             {/* <SuggestedAccounts label="Following accounts" /> */}
         </aside>
     );

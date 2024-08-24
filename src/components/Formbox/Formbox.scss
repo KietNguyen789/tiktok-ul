@@ -1,4 +1,4 @@
-.wrapper {
+.formbox-wrapper {
     width: 500px;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
@@ -8,17 +8,20 @@
     position: relative;
     //padding-left: 16px;
     padding: 16px;
-    top: 300px;
+    top: 0px;
     left: 50%;
     height: auto;
-    transform: translate(-50%, -50%);
-    // z-index: 999;
+    transform: translate(-50%, 0);
+    z-index: 20;
+    margin-bottom: 5px;
+    //margin-left: 5px;
 }
 .label {
     //color: #0866ff;
     color: var(--text-color);
     font-family: var(--font-family-display);
     font-size: 3rem;
+    font-weight: 600;
     margin-left: 8px;
     margin-bottom: 10px;
 }

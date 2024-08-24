@@ -22,6 +22,8 @@ import Image from '~/components/Image';
 import Search from '../Search';
 import config from '~/config';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import CreateEvent from '../CreateEvent';
 const cx = classNames.bind(styles);
 
 function Header() {
@@ -92,24 +94,24 @@ function Header() {
             separate: true,
         },
     ];
-    const numbermessage = 1;
+
+    const numbermessage = 12;
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 {/* logo 
-                0. tro vao logo
-                1. copy outer HTML
-                2. copy sympol -> copy outer HTML*/}
+                        0. tro vao logo
+                        1. copy outer HTML
+                        2. copy sympol -> copy outer HTML*/}
 
                 {/* <Link to={config.routes.home} className={cx('logo-link')}>
-                    {' '}
-                    <Image src={images.logo} className={cx('logo')}></Image>
-                </Link> */}
-                <Button lefticon={<FontAwesomeIcon icon={faPlus} />} className={cx('Upload-btn')}>
-                    Upload
-                </Button>
+                            {' '}
+                            <Image src={images.logo} className={cx('logo')}></Image>
+                        </Link> */}
+
+                <CreateEvent />
                 {/* search 
-                spellcheck check chinh ta*/}
+                        spellcheck check chinh ta*/}
                 <Search />
                 <div className={cx('actions')}>
                     {currentUser ? (
